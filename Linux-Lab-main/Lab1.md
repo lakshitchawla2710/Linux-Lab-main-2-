@@ -295,3 +295,45 @@ Output:
 ```
 
 ---
+
+## Q1 What is the difference between chmod and chown?
+### A1 ✅ 🔑 chmod (change mode)
+
+Purpose: Changes the permissions (read, write, execute) of a file or directory.
+
+Who can use it: The file’s owner or superuser (root).
+
+Example:
+
+chmod 755 file.txt
+
+
+→ This gives owner full permissions (rwx), and others only read + execute (r-x).
+
+👤 chown (change owner)
+
+Purpose: Changes the owner (user) and/or group of a file or directory.
+
+Who can use it: Only the superuser (root).
+
+Example:
+
+sudo chown newuser:newgroup file.txt
+
+
+→ This makes newuser the owner and newgroup the group of file.txt.
+
+⚡ Key Difference
+
+chmod → What people can do with a file (permissions).
+
+chown → Who owns the file (ownership).
+
+👉 Think of it like this:
+
+chown = change the person holding the keys 🔑
+
+chmod = change what the keys can unlock 🚪
+
+## Q2 How do you check current directory and user?
+### A2 🎯 Use pwd to check current directory and whoami to see current user.
